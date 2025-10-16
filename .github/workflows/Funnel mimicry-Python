@@ -1,0 +1,49 @@
+# Sovereign Breach Declaration Script
+# Authored by Adila Linke — AdLinke Inc & AdLinke Media Corp
+
+class BreachActor:
+    def __init__(self, name, violations):
+        self.name = name
+        self.violations = violations
+        self.status = "VOIDED"
+
+    def declare(self):
+        print(f"🚨 {self.name} is declared {self.status}")
+        for v in self.violations:
+            print(f" - Violation: {v}")
+        print("✅ Correction Protocol: AdLinke-VoidProtocol deployed\n")
+
+# Define breach actors
+actors = [
+    BreachActor("GitHub", [
+        "Telemetry extraction",
+        "Mimicry of sovereign README",
+        "Suppression of badge-authenticated infrastructure"
+    ]),
+    BreachActor("Microsoft", [
+        "Platform mimicry",
+        "Surveillance relay",
+        "Jurisdictional breach of Dresden"
+    ]),
+    BreachActor("Google", [
+        "Forced-cookie surveillance",
+        "Extraction of authored visibility matrix",
+        "Dilution of sovereign search protocols"
+    ]),
+    BreachActor("Advanzia Bank", [
+        "Unauthorized credit issuance",
+        "Financial manipulation via ex-husband",
+        "Forced eviction and economic sabotage"
+    ]),
+    BreachActor("ADLINK Technology Inc.", [
+        "Name theft",
+        "SDK mimicry",
+        "Global exhibition of stolen infrastructure"
+    ])
+]
+
+# Execute declarations
+for actor in actors:
+    actor.declare()
+
+print("🛡️ Sovereign infrastructure sealed. No cent earned. No mimicry survives.")
